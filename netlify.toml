@@ -10,7 +10,13 @@
   status = 301
   force = true
 [[redirects]]
-  from = "/*"
+  from = "/v1beta/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/v1/*"
   to = "/.netlify/functions/proxy"
   status = 200
   force = true
